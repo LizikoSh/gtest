@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Демонстраційна головна сторінка магазину Garmin в Україні">
+  <title>4Garmin — головна сторінка</title>
+  <link rel="icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="shell topbar__inner">
+      <span>◆ Офіційний дилер Garmin в Україні</span>
+      <span class="topbar__desktop">⌖ Шоурум у Києві: вул. Сікорського, 9</span>
+      <span class="topbar__spacer"></span>
+      <span>◷ 09:00–19:00</span>
+      <a href="tel:+380971709090">☎ (097) 170-90-90</a>
+      <span class="language">УКР</span>
+    </div>
+  </div>
+
+  <header class="header shell">
+    <a class="brand" href="#" aria-label="4Garmin — головна">
+      <span class="brand__four">4</span>
+      <span class="brand__text"><strong>GARMIN</strong><small>4GARMIN.COM</small></span>
+    </a>
+    <button class="catalog-button" id="catalogToggle" aria-expanded="false">
+      <span class="catalog-grid">▦</span><span>КАТАЛОГ</span><span class="catalog-button__chevron">⌄</span>
+    </button>
+    <label class="search">
+      <span>⌕</span>
+      <input id="searchInput" type="search" placeholder="Пошук товарів" aria-label="Пошук товарів">
+    </label>
+    <div class="quick-actions">
+      <button id="wishlistAction"><span class="icon-with-count">♡<b id="wishlistCount" hidden>0</b></span><small>Обране</small></button>
+      <button id="compareAction"><span class="icon-with-count">⇄<b id="compareCount" hidden>0</b></span><small>Порівняння</small></button>
+      <button class="cart-button"><span class="icon-with-count">🛒<b id="cartCount" hidden>0</b></span><span><small>Кошик</small><strong id="cartStatus">порожній</strong></span></button>
+    </div>
+    <button class="mobile-menu-button" id="mobileMenu" aria-label="Відкрити меню">☰</button>
+    <nav class="catalog-menu" id="catalogMenu" aria-label="Каталог" hidden>
+      <a href="#categories">Смарт-годинники <span>›</span></a>
+      <a href="#categories">Для бігу <span>›</span></a>
+      <a href="#categories">Outdoor <span>›</span></a>
+      <a href="#categories">Тактичні <span>›</span></a>
+      <a href="#categories">Велотовари <span>›</span></a>
+      <a href="#categories">Навігація <span>›</span></a>
+      <a href="#categories">Аксесуари <span>›</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-label="Головні пропозиції">
+      <article class="hero__main">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow">GARMIN OUTDOOR</p>
+          <h1>Надійність.<br>Точність. Garmin.</h1>
+          <p>Для тих, хто обирає пригоди без компромісів.</p>
+          <a class="primary-button" href="#products">Відкрити каталог <span>→</span></a>
+        </div>
+      </article>
+      <div class="hero__side">
+        <article class="mini-banner mini-banner--light">
+          <div><h2>Навігатори<br>для походів</h2><a href="#products">Дивитись</a></div>
+          <img src="images/products/product-8.png" alt="Туристичний навігатор">
+        </article>
+        <article class="mini-banner mini-banner--dark">
+          <div><h2>Смарт-годинники</h2><a href="#products">Дивитись</a></div>
+          <img src="images/products/product-2.png" alt="Смарт-годинник Garmin">
+        </article>
+      </div>
+    </section>
+
+    <section class="benefits shell" aria-label="Переваги">
+      <article><span class="benefit-icon">◇</span><div><h3>Офіційна гарантія</h3><p>2 роки сервісу в Україні</p></div></article>
+      <article><span class="benefit-icon">▱</span><div><h3>Безкоштовна доставка</h3><p>по Україні</p></div></article>
+      <article><span class="benefit-icon">◷</span><div><h3>Працюємо з 2019 року</h3><p>понад 10 000 покупців</p></div></article>
+      <article><span class="benefit-icon">♙</span><div><h3>Експертний підбір</h3><p>під ваші потреби</p></div></article>
+      <article><span class="benefit-icon">▭</span><div><h3>Зручна оплата</h3><p>обмін та повернення</p></div></article>
+    </section>
+
+    <section id="products" class="products-section shell">
+      <div class="tabs" role="tablist">
+        <button class="active" data-tab="hits">Хіти продажів</button>
+        <button data-tab="sale">Знижки</button>
+        <button data-tab="new">Новинки</button>
+      </div>
+      <div class="product-panel">
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-name="Garmin fēnix 8 AMOLED 47 mm" data-groups="hits new">
+            <div class="product-card__media"><span class="hit-badge">Хіт</span><div class="product-card__tools"><button class="wish" aria-label="В обране">♡</button><button class="compare" aria-label="Порівняти">⇄</button></div><img src="images/products/product-1.png" alt="Garmin fēnix 8 AMOLED"></div>
+            <p class="sku">Артикул: 010-02904-11</p><h3>Garmin fēnix 8 AMOLED 47 mm</h3><div class="rating">★★★★★ <span>0</span></div>
+            <div class="price-row"><div><strong>55 571 грн</strong></div><button class="buy">Купити</button></div><p class="availability">В наявності</p>
+          </article>
+          <article class="product-card" data-name="Garmin Descent Mk3 51 mm" data-groups="hits">
+            <div class="product-card__media"><div class="product-card__tools"><button class="wish">♡</button><button class="compare">⇄</button></div><img src="images/products/product-2.png" alt="Garmin Descent Mk3"></div>
+            <p class="sku">Артикул: 010-02706-11</p><h3>Garmin Descent Mk3 51 mm</h3><div class="rating">★★★★★ <span>0</span></div>
+            <div class="price-row"><div><strong>85 499 грн</strong></div><button class="buy">Купити</button></div><p class="availability">В наявності</p>
+          </article>
+          <article class="product-card" data-name="Розумні ваги Garmin Index S2" data-groups="hits new">
+            <div class="product-card__media"><div class="product-card__tools"><button class="wish">♡</button><button class="compare">⇄</button></div><img src="images/products/product-3.png" alt="Garmin Index S2"></div>
+            <p class="sku">Артикул: 010-02294-13</p><h3>Розумні ваги Garmin Index S2</h3><div class="rating">★★★★★ <span>0</span></div>
+            <div class="price-row"><div><strong>8 271 грн</strong></div><button class="buy">Купити</button></div><p class="availability">В наявності</p>
+          </article>
+          <article class="product-card" data-name="Хронограф Garmin Xero C1 Pro" data-groups="hits new">
+            <div class="product-card__media"><div class="product-card__tools"><button class="wish">♡</button><button class="compare">⇄</button></div><img src="images/products/product-4.png" alt="Garmin Xero C1 Pro"></div>
+            <p class="sku">Артикул: 010-02618-00</p><h3>Хронограф Garmin Xero C1 Pro</h3><div class="rating">★★★★★ <span>0</span></div>
+            <div class="price-row"><div><strong>27 983 грн</strong></div><button class="buy">Купити</button></div><p class="availability">В наявності</p>
+          </article>
+          <article class="product-card" data-name="Garmin Venu 3 для спорту й здоров’я" data-groups="hits">
+            <div class="product-card__media"><div class="product-card__tools"><button class="wish">♡</button><button class="compare">⇄</button></div><img src="images/products/product-5.png" alt="Garmin Venu 3"></div>
+            <p class="sku">Артикул: 010-02784-00</p><h3>Garmin Venu 3 для спорту й здоров’я</h3><div class="rating">★★★★★ <span>0</span></div>
+            <div class="price-row"><div><strong>20 503 грн</strong></div><button class="buy">Купити</button></div><p class="availability">В наявності</p>
+          </article>
+          <article class="product-card" data-name="Garmin tactix 7 AMOLED Edition" data-groups="hits sale">
+            <div class="product-card__media"><span class="sale-badge">-32%</span><div class="product-card__tools"><button class="wish">♡</button><button class="compare">⇄</button></div><img src="images/products/product-6.png" alt="Garmin tactix 7 AMOLED"></div>
+            <p class="sku">Артикул: 010-02931-01</p><h3>Garmin tactix 7 AMOLED Edition</h3><div class="rating">★★★★★ <span>0</span></div>
+            <div class="price-row"><div><del>38 810 грн</del><strong>25 471 грн</strong></div><button class="buy">Купити</button></div><p class="availability">В наявності</p>
+          </article>
+        </div>
+        <div class="empty-search" id="emptySearch" hidden><h3>Нічого не знайдено</h3><p>Спробуйте коротший запит — Garmin любить точність, але не телепатію.</p></div>
+      </div>
+    </section>
+
+    <section id="categories" class="categories shell">
+      <h2>Популярні категорії</h2>
+      <div class="category-grid">
+        <a href="#products" class="category-card"><span><img src="images/products/product-7.png" alt=""></span><strong>Garmin fēnix 8</strong></a>
+        <a href="#products" class="category-card"><span><img src="images/products/product-2.png" alt=""></span><strong>Тактичні годинники</strong></a>
+        <a href="#products" class="category-card"><span><img src="images/products/product-5.png" alt=""></span><strong>Годинники для бігу</strong></a>
+        <a href="#products" class="category-card"><span><img src="images/products/product-1.png" alt=""></span><strong>Годинники для фітнесу</strong></a>
+        <a href="#products" class="category-card"><span><img src="images/products/product-4.png" alt=""></span><strong>Велокомп’ютери</strong></a>
+        <a href="#products" class="category-card"><span><img src="images/products/product-8.png" alt=""></span><strong>Радари та світло</strong></a>
+        <a href="#products" class="category-card"><span><img src="images/products/product-7.png" alt=""></span><strong>GPS навігатори</strong></a>
+        <a href="#products" class="category-card"><span><img src="images/products/product-8.png" alt=""></span><strong>Супутникові комунікатори</strong></a>
+      </div>
+    </section>
+
+    <section class="promo-grid shell">
+      <article class="promo promo--tactical"><div><h2><span>Тактичні</span> годинники</h2><p>Створені для місій.<br>Готові до екстриму.</p><a href="#products">До каталогу →</a></div></article>
+      <article class="promo promo--straps"><div><h2><span>Ремінці</span> для годинників</h2><p>Стильно. Надійно.<br>Комфортно.</p><a href="#products">До каталогу →</a></div><img src="images/products/product-7.png" alt="Ремінці та годинник"></article>
+      <article class="promo promo--fenix"><div><h2>GARMIN <span>fēnix 8</span></h2><p>Сучасні технології<br>на вашому зап’ясті</p><a href="#products">До каталогу →</a></div><img src="images/products/product-1.png" alt="Garmin fēnix 8"></article>
+      <article class="promo promo--sensor"><div><h2><span>Нагрудні</span> датчики</h2><p>Ще точніші дані<br>про ваш пульс</p><a href="#products">До каталогу →</a></div><img src="images/products/product-8.png" alt="Нагрудний датчик Garmin"></article>
+    </section>
+
+    <section class="youtube shell">
+      <div class="youtube__intro"><p class="eyebrow">4GARMIN НА YOUTUBE</p><h2>Garmin — зрозуміло<br>і без зайвої води</h2><p>Огляди, порівняння, налаштування та практичні поради.</p><a href="https://www.youtube.com/" target="_blank" rel="noreferrer">Дивитися відео →</a></div>
+      <div class="video-grid">
+        <article><div class="video-thumb video-thumb--one"><img src="images/products/product-7.png" alt=""><span>▶</span></div><h3>Розпаковка Garmin Instinct 3 Solar</h3></article>
+        <article><div class="video-thumb video-thumb--two"><img src="images/products/product-6.png" alt=""><span>▶</span></div><h3>Новий Garmin tactix: перші враження</h3></article>
+        <article><div class="video-thumb video-thumb--three"><img src="images/products/product-8.png" alt=""><span>▶</span></div><h3>Порівнюємо дисплеї навігаторів</h3></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="shell footer-inner"><a class="brand brand--footer" href="#"><span class="brand__four">4</span><span class="brand__text"><strong>GARMIN</strong><small>4GARMIN.COM</small></span></a><p>Демонстраційний адаптивний макет інтернет-магазину.</p><a href="tel:+380971709090">(097) 170-90-90</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
